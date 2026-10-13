@@ -109,6 +109,8 @@ ol.steps li::before{content:counter(s);font-family:var(--mono);font-weight:600;c
 .check label{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer;align-items:flex-start}
 .check input{width:20px;height:20px;margin-top:5px;accent-color:var(--accent);flex:none}
 .check input:checked+span{color:var(--mute);text-decoration:line-through}
+.goal{margin:12px 0 0;padding-left:1.3em}
+.goal li{padding:4px 0}
 .check{padding:0;margin:0}
 .eq{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .eq button{font:inherit;font-family:var(--mono);font-size:13px;padding:8px 12px;background:var(--bg);color:var(--ink);border:1px solid var(--line);cursor:pointer}
@@ -196,7 +198,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <div class="group-h"><b>Start here</b><h2>まず知りたいこと</h2></div>
     <div class="rows">
       <a href="#fx-first"><h3>エフェクターは何を買えばいいか</h3><p>ペダルチューナー、マルチ、パワーサプライ、ボード。合計5万円くらい</p></a>
-      <a href="#cable"><h3>シールドは何がいいか</h3><p>長さ、プラグの形、定番の1本</p></a>
+      <a href="#cable"><h3>シールドは何がいいか</h3><p>長さ、プラグの形、おすすめの1本</p></a>
       <a href="#tone"><h3>音作りの基礎</h3><p>つまみを触る順番と、困ったときの早見表</p></a>
       <a href="#pa"><h3>PAと返し</h3><p>返しは自分が納得するまで上げてもらう</p></a>
     </div>
@@ -206,7 +208,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <div class="group-h"><b>Play</b><h2>演奏する</h2></div>
     <div class="rows">
       <a href="#form"><h3>構え方と指の痛み</h3><p>ストラップの長さ、ベースの角度、親指の位置、痛いときの見分け方</p></a>
-      <a href="#roadmap"><h3>上達ロードマップ</h3><p>最初の1か月から4年後まで、何をどの順でやるか</p></a>
+      <a href="#roadmap"><h3>上達ロードマップ</h3><p>最初の1か月から上級編まで、何をどの順でやるか</p></a>
       <a href="#video"><h3>弾いてみたの撮り方</h3><p>音の録り方、カメラの置き方、音と映像の合わせ方、出す前の確認</p></a>
     </div>
   </section>
@@ -233,6 +235,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
   <section class="group" id="cat-stage">
     <div class="group-h"><b>Stage &amp; People</b><h2>本番と人</h2></div>
     <div class="rows">
+      <a href="#audition"><h3>オーディションを経験してほしい</h3><p>他の楽器の音と外音に耳が向くようになる</p></a>
       <a href="#players"><h3>プレイヤー名鑑</h3><p>伝説から邦楽ロック、YouTuberまで。演奏動画つき</p></a>
     </div>
   </section>
@@ -348,58 +351,58 @@ code,.m{font-family:var(--mono);font-size:.92em}
 
 <!-- ============ ROADMAP ============ -->
 <div class="page" data-page="roadmap" hidden>
-<header class="pagehead"><div class="eyebrow">Play</div><h1>上達ロードマップ</h1><p class="lead">何をどの順でやるか。医学部の勉強の合間に、週に2〜3回、1回30分ほど弾く人の4年間の目安。試験前は休んでいい。前後してかまわないので、各段階のチェックが埋まったら次へ進む。</p></header>
+<header class="pagehead"><div class="eyebrow">Play</div><h1>上達ロードマップ</h1><p class="lead">何をどの順でやるか。医学部の勉強の合間に、週に2〜3回、1回30分ほど弾く人の目安。試験前は休んでいい。順番は前後してかまわない。</p></header>
 
 <section id="rm-map">
   <div class="stage">
     <div class="stage-h"><b>最初の1か月</b><h2>音を出して、拍に合わせる</h2></div>
     <div class="split" style="grid-template-columns:minmax(0,120px) minmax(0,1fr)"><figure class="photo"><img data-img="metro" alt="振り子式のメトロノーム" width="428" height="640"><figcaption>メトロノーム。スマホの無料アプリで足りる。<small class="credit">写真: Vincent Quach (Invincible)／CC BY-SA 3.0（<a href="https://commons.wikimedia.org/wiki/File:Metronome_Nikko.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
     <div><p>チューニングして、<a href="#form">構え方</a> を決め、アンプから音を出す。メトロノームを60にして開放弦を4分音符で弾く。</p>
-    <ul class="check">
-      <li><label><input type="checkbox" id="rm-1a"><span>自分でチューニングできる</span></label></li>
-      <li><label><input type="checkbox" id="rm-1b"><span>人差し指と中指で交互に弾ける</span></label></li>
-      <li><label><input type="checkbox" id="rm-1c"><span>テンポ60の4分音符と8分音符を、1分間ずれずに弾ける</span></label></li>
+    <ul class="goal">
+      <li>自分でチューニングできる</li>
+      <li>人差し指と中指で交互に弾ける</li>
+      <li>テンポ60の4分音符と8分音符を、1分間ずれずに弾ける</li>
     </ul></div></div>
   </div>
 
   <div class="stage">
     <div class="stage-h"><b>〜半年</b><h2>1曲を最後まで通す</h2></div>
     <p>ルートを8分で刻む曲を1つ選び、TAB譜を見ながら原曲に合わせる。音を減らしてよいので、止まらずに最後まで行く。</p>
-    <ul class="check">
-      <li><label><input type="checkbox" id="rm-2a"><span>TAB譜が読める</span></label></li>
-      <li><label><input type="checkbox" id="rm-2b"><span>原曲に合わせて、1曲を止まらずに通せる</span></label></li>
-      <li><label><input type="checkbox" id="rm-2c"><span>弾いていない弦が鳴りっぱなしにならない</span></label></li>
+    <ul class="goal">
+      <li>TAB譜が読める</li>
+      <li>原曲に合わせて、1曲を止まらずに通せる</li>
+      <li>弾いていない弦が鳴りっぱなしにならない</li>
     </ul>
   </div>
 
   <div class="stage">
     <div class="stage-h"><b>〜1年</b><h2>リズムを固める</h2></div>
     <p>メトロノームを2拍目と4拍目だけ鳴らして弾く。スマホで録音して聞く。ドラムと2人で合わせ、バスドラムと同じ場所で音を出す。</p>
-    <ul class="check">
-      <li><label><input type="checkbox" id="rm-3a"><span>自分の録音を聞いて、走った場所と遅れた場所を言える</span></label></li>
-      <li><label><input type="checkbox" id="rm-3b"><span>3弦と4弦の、12フレットまでの音名が言える</span></label></li>
-      <li><label><input type="checkbox" id="rm-3c"><span>バンドで合わせて、2〜3曲を通せる</span></label></li>
+    <ul class="goal">
+      <li>自分の録音を聞いて、走った場所と遅れた場所を言える</li>
+      <li>3弦と4弦の、12フレットまでの音名が言える</li>
+      <li>バンドで合わせて、2〜3曲を通せる</li>
     </ul>
   </div>
 
   <div class="stage">
-    <div class="stage-h"><b>〜3年</b><h2>引き出しを増やす</h2></div>
-    <p><b>3年目までにここまで来てほしい。</b>TAB譜を覚えて弾くところで止まる人が多い。それでも曲は弾けるが、もったいない。スケールとコードがわかると、TAB譜がなくても弾けるようになる。</p>
-    <p>メジャーとマイナーのスケールを1つの形で覚える。ルート・3度・5度の場所を知る。ピック弾きかスラップ、やりたい曲に必要なほうを始める。</p>
-    <ul class="check">
-      <li><label><input type="checkbox" id="rm-4a"><span>メジャーとマイナーのスケールを、どのキーでも弾ける</span></label></li>
-      <li><label><input type="checkbox" id="rm-4b"><span>コード名を見て、ルートと5度で伴奏できる</span></label></li>
-      <li><label><input type="checkbox" id="rm-4c"><span>指弾き以外の奏法で1曲弾ける</span></label></li>
+    <div class="stage-h"><b>上級編</b><h2>引き出しを増やす</h2></div>
+    <p>TAB譜を覚えて弾くだけでも曲は弾ける。そこにスケールとコードが加わると、TAB譜がなくても弾けるようになる。</p>
+    <p>メジャーとマイナーのスケールを、形で1つずつ覚える。形は同じまま始める場所をずらせば、どのキーでも弾ける。ルート・3度・5度の場所を知る。ピック弾きかスラップ、やりたい曲に必要なほうを始める。</p>
+    <ul class="goal">
+      <li>メジャーとマイナーのスケールの形を覚えた</li>
+      <li>コード名を見て、ルートと5度で伴奏できる</li>
+      <li>指弾き以外の奏法で1曲弾ける</li>
     </ul>
   </div>
 
   <div class="stage">
-    <div class="stage-h"><b>〜4年</b><h2>自分で決めて弾く</h2></div>
+    <div class="stage-h"><b>上級編</b><h2>自分で決めて弾く</h2></div>
     <p>TAB譜のない曲を耳で拾う。最初はルートだけでよい。<a href="#tone">音作り</a> を自分で決め、ライブで <a href="#pa">PAとのやり取り</a> を経験する。<a href="#video">弾いてみた</a> を1本撮る。</p>
-    <ul class="check">
-      <li><label><input type="checkbox" id="rm-5a"><span>サビのベースを耳だけで拾える</span></label></li>
-      <li><label><input type="checkbox" id="rm-5b"><span>コード進行から8小節のラインを作れる</span></label></li>
-      <li><label><input type="checkbox" id="rm-5c"><span>アンプの音を自分で作って、理由を説明できる</span></label></li>
+    <ul class="goal">
+      <li>サビのベースを耳だけで拾える</li>
+      <li>コード進行から8小節のラインを作れる</li>
+      <li>アンプの音を自分で作って、理由を説明できる</li>
     </ul>
   </div>
 
@@ -1218,7 +1221,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
 
 <section id="cable">
   <h2>シールドは何がいいか</h2>
-  <p class="sub">定番メーカーの3mを1本。迷ったら CANARE（カナレ）。</p>
+  <p class="sub">自分が使っているのは HISTORY のスタンダード。5mと3mの2本。</p>
   <div class="figs">
     <figure class="photo"><img data-img="cable" alt="黒いシールド。両端に金色のストレートプラグが付いている" width="472" height="640"><figcaption><b>シールド</b> 両端がストレートプラグのもの。<small class="credit">写真: Zwee Trenpro／CC0（<a href="https://commons.wikimedia.org/wiki/File:ZWEE-Instrument_Cable.png" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
     <figure class="photo"><img data-img="lplug" alt="L字プラグとストレートプラグを並べたところ" width="480" height="640"><figcaption><b>L字とストレート</b> 上がL字、下がストレート。<small class="credit">写真: Claude-Étienne Armingaud／CC BY-SA 3.0（<a href="https://commons.wikimedia.org/wiki/File:Guitar_Jack.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
@@ -1227,7 +1230,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <div><dt>長さ<small>3m か 5m</small></dt><dd>家と部室は3mで足りる。ステージで動くなら5m。長すぎると足に絡む。</dd></div>
     <div><dt>プラグの形<small>ストレート / L字</small></dt><dd>ジャックがボディの正面にあるベース（プレベ、ジャズベ）は、ベース側がL字だと出っ張らない。側面にあるベースはストレート。アンプやボードに挿す側はストレート。</dd></div>
     <div><dt>本数<small>ボードを組んだら2本</small></dt><dd>ベースからボードまでと、ボードからアンプか DI まで。</dd></div>
-    <div><dt>定番<small>迷ったら</small></dt><dd>CANARE は安くて丈夫で、どこのスタジオにもある。ほかに BELDEN、Providence、CUSTOM AUDIO JAPAN など。ベースに付いてきた細いシールドは断線しやすいので、本番までに買い替える。</dd></div>
+    <div><dt>おすすめ<small>自分が使っているもの</small></dt><dd>HISTORY（島村楽器のブランド）のスタンダード。5mと3mを1本ずつ持っている。ほかの定番は CANARE、BELDEN、Providence など。ベースに付いてきた細いシールドは断線しやすいので、本番までに買い替える。</dd></div>
     <div><dt>扱い方<small>長持ちさせる</small></dt><dd>抜くときはケーブルではなくプラグを持つ。肘に巻きつけず、輪にして束ねる。</dd></div>
   </dl>
   <div class="warnbox"><b>スピーカーケーブルとは別物:</b> 形は同じでも、ヘッドとキャビの間にシールドは使わない。詳しくは <a href="#amp">アンプの基礎</a> へ。</div>
@@ -1310,6 +1313,28 @@ code,.m{font-family:var(--mono);font-size:.92em}
 </div>
 
 <!-- ============ PLAYERS ============ -->
+<div class="page" data-page="audition" hidden>
+<header class="pagehead"><div class="eyebrow">Live</div><h1>オーディションを経験してほしい</h1><p class="lead">部内のオーディションは、受かるかどうかより、受けること自体で耳が変わる。一度は出てみてほしい。</p></header>
+<section>
+  <h2>受けると何が変わるか</h2>
+  <dl class="terms">
+    <div><dt>他の楽器を聞くようになる<small>いちばん大きい</small></dt><dd>審査されると思うと、自分の音だけでなく、ドラム、ギター、ボーカルの音に注意が向く。</dd></div>
+    <div><dt>外音を意識するようになる<small>音の抜け</small></dt><dd>客席でどう聞こえているかを考えるようになる。アンプの前ではいい音でも、バンドの中では埋もれていることがある。直し方は <a href="#tone">音作りの基礎</a> と <a href="#pa">PAと返し</a> へ。</dd></div>
+    <div><dt>人に評価される<small>講評をもらう</small></dt><dd>自分では気づかないことを、他の人の耳で言ってもらえる。</dd></div>
+    <div><dt>バンドで仕上げる<small>1曲を詰める</small></dt><dd>日付が決まっていると、全員で1曲を本番の水準まで詰めることになる。</dd></div>
+    <div><dt>落ちても残る<small>結果より経験</small></dt><dd>落ちても、上の4つは手元に残る。</dd></div>
+  </dl>
+</section>
+<section>
+  <h2>受ける前にやっておくこと</h2>
+  <ul class="goal">
+    <li>バンドの練習をスマホで録音して、部屋の後ろで鳴っている音としてベースが聞こえるか確かめる</li>
+    <li>立って弾く。<a href="#form">構え方</a> も見られている</li>
+    <li>当日は、<a href="#pa">返し</a> が聞こえるまで上げてもらう</li>
+  </ul>
+</section>
+</div>
+
 <div class="page" data-page="players" hidden>
 <header class="pagehead"><div class="eyebrow">People</div><h1>プレイヤー名鑑</h1><p class="lead">聴いて、観て、盗む。ジャンルも時代も違うベーシストを並べました。各カードの「観る」から演奏動画を見られます。</p></header>
 <section>
@@ -1383,8 +1408,8 @@ code,.m{font-family:var(--mono);font-size:.92em}
   var $=function(id){return document.getElementById(id)};
 
   // --- page router ---
-  var pages=['home','form','roadmap','video','bass','amp','club','tone','digital','fx','board','gear','pa','players'];
-  var catOf={form:'cat-play',roadmap:'cat-play',video:'cat-play',club:'cat-amp',tone:'cat-amp',digital:'cat-amp',amp:'cat-amp',bass:'cat-gear',fx:'cat-gear',board:'cat-gear',gear:'cat-gear',pa:'cat-stage',players:'cat-stage'};
+  var pages=['home','form','roadmap','video','bass','amp','club','tone','digital','fx','board','gear','pa','audition','players'];
+  var catOf={form:'cat-play',roadmap:'cat-play',video:'cat-play',club:'cat-amp',tone:'cat-amp',digital:'cat-amp',amp:'cat-amp',bass:'cat-gear',fx:'cat-gear',board:'cat-gear',gear:'cat-gear',pa:'cat-stage',audition:'cat-stage',players:'cat-stage'};
   var pageEls={};
   pages.forEach(function(p){pageEls[p]=document.querySelector('.page[data-page="'+p+'"]')});
   var navLinks=$('navlinks').querySelectorAll('a');
