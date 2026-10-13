@@ -215,7 +215,6 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <div class="group-h"><b>Amp &amp; Tone</b><h2>アンプと音作り</h2></div>
     <div class="rows">
       <a href="#club"><h3>部室のアンプ</h3><p>SVT-3 PRO＋4.5XL と RH450 の実物ガイド</p></a>
-      <a href="#tone"><h3>音作り・トラブル</h3><p>つまみを触る順番と、困ったときの早見表</p></a>
       <a href="#digital"><h3>音が電子音っぽいとき</h3><p>弦、手元、GAIN、エフェクター、アンプの順に原因を探す</p></a>
       <a href="#amp"><h3>アンプの基礎</h3><p>しくみと用語、Ω計算機、電源を入れる順番</p></a>
     </div>
@@ -225,7 +224,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <div class="group-h"><b>Gear</b><h2>機材を選ぶ</h2></div>
     <div class="rows">
       <a href="#bass"><h3>ベースの種類</h3><p>パッシブとアクティブ、プレベ・ジャズベ・ハムバッカー</p></a>
-      <a href="#fx"><h3>マルチエフェクター</h3><p>エフェクトの種類、つなぐ順番、最初の1台</p></a>
+      <a href="#fx"><h3>マルチエフェクター</h3><p>最初の1台、エフェクトの種類、つなぐ順番</p></a>
       <a href="#board"><h3>一気に揃えるなら</h3><p>チューナー、コンプ、プリアンプ、MS-60B、ブースター</p></a>
       <a href="#gear"><h3>シールド・ブランド・ストラップ・ボード</h3><p>シールド選び、有名ブランド、ストラップ選び、ボードの組み方</p></a>
     </div>
@@ -234,7 +233,6 @@ code,.m{font-family:var(--mono);font-size:.92em}
   <section class="group" id="cat-stage">
     <div class="group-h"><b>Stage &amp; People</b><h2>本番と人</h2></div>
     <div class="rows">
-      <a href="#pa"><h3>PAと返し</h3><p>PAボードの基礎と、返し・外音の伝え方</p></a>
       <a href="#players"><h3>プレイヤー名鑑</h3><p>伝説から邦楽ロック、YouTuberまで。演奏動画つき</p></a>
     </div>
   </section>
@@ -969,51 +967,6 @@ code,.m{font-family:var(--mono);font-size:.92em}
 
 <div class="page" data-page="fx" hidden>
 <header class="pagehead"><div class="eyebrow">Gear</div><h1>マルチエフェクター</h1><p class="lead">複数のエフェクトを1台にまとめた機材。足元のスイッチで踏み替えて使う、アンプの音色を拡張する道具。</p></header>
-<section>
-  <h2>マルチエフェクターとは</h2>
-  <p class="sub">たくさんのエフェクトが1台に入っていて、足で切り替える機材。</p>
-  <figure class="photo"><img data-img="gt" alt="BOSS のマルチエフェクター。上に画面とつまみ、下にフットスイッチが3つ並んでいる" width="640" height="472"><figcaption>マルチエフェクターの例（BOSS GT-1000CORE）。下の3つが足で踏むスイッチ。<small class="credit">写真: Pallerti／CC BY-SA 4.0（<a href="https://commons.wikimedia.org/wiki/File:BOSS_GT-1000_CORE.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
-
-  <h3>代表的なエフェクトの種類</h3>
-  <dl class="terms">
-    <div><dt>コンプレッサー<small>compressor</small></dt><dd>音の粒を揃え、弱い音を持ち上げる。かけっぱなしにして常に薄く使うベーシストも多い。かけすぎると音の強弱がなくなる。</dd></div>
-    <div><dt>オーバードライブ<small>/ディストーション</small></dt><dd>音を歪ませる。ベースでは原音に薄く混ぜて存在感やザラつきを足す使い方が定番。かけすぎると輪郭がぼやける。</dd></div>
-    <div><dt>コーラス<small>chorus</small></dt><dd>音を揺らして重ねることで、広がりと厚みを出す。バラードやフュージョン系のフレーズで映える。</dd></div>
-    <div><dt>オクターバー<small>octaver</small></dt><dd>弾いた音の1オクターブ下や上を重ねる。シンセベースのような音や、迫力を足したいフレーズで使う。</dd></div>
-    <div><dt>プリアンプ/EQ<small>preamp</small></dt><dd>音色の土台を作る、帯域を整える機能。DI出力を内蔵している機種も多く、ライン録音やPAへの音質にも関わる。</dd></div>
-    <div><dt>チューナー<small>tuner</small></dt><dd>内蔵チューナー。踏むと自動でミュートされる機種が多く、ステージ上でも音を出さずにチューニングできる。</dd></div>
-    <div><dt>ルーパー<small>looper</small></dt><dd>弾いたフレーズを録音して重ねる機能。練習や一人での作曲、ライブでの一発芸的な使い方もされる。</dd></div>
-  </dl>
-
-  <h3 style="margin-top:28px">つなぐ順番の基本</h3>
-    <div class="svgbox">
-  <svg viewBox="0 0 780 90" width="780" height="90" role="img" aria-label="接続順の例：ベース、チューナー、コンプレッサー、歪み系、モジュレーション、アンプ">
-    <g font-family="JetBrains Mono, monospace" font-size="11" fill="currentColor">
-      <rect x="4" y="24" width="86" height="42" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="47" y="49" text-anchor="middle">BASS</text>
-      <line x1="90" y1="45" x2="120" y2="45" stroke="currentColor" stroke-width="1.5"/>
-      <rect x="120" y="24" width="94" height="42" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="167" y="49" text-anchor="middle">TUNER</text>
-      <line x1="214" y1="45" x2="244" y2="45" stroke="currentColor" stroke-width="1.5"/>
-      <rect x="244" y="24" width="94" height="42" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="291" y="49" text-anchor="middle">COMP</text>
-      <line x1="338" y1="45" x2="368" y2="45" stroke="currentColor" stroke-width="1.5"/>
-      <rect x="368" y="24" width="94" height="42" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="415" y="49" text-anchor="middle">DRIVE</text>
-      <line x1="462" y1="45" x2="492" y2="45" stroke="currentColor" stroke-width="1.5"/>
-      <rect x="492" y="24" width="120" height="42" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="552" y="49" text-anchor="middle">MOD / CHORUS</text>
-      <line x1="612" y1="45" x2="642" y2="45" stroke="currentColor" stroke-width="1.5"/>
-      <rect x="642" y="24" width="130" height="42" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="707" y="49" text-anchor="middle">AMP</text>
-    </g>
-  </svg>
-  </div>
-  <p>基本形は <b>チューナー → コンプ → 歪み → コーラスなど → アンプ</b>。</p>
-  <p>絶対のルールではない。電源や配線の都合で入れ替えてよい。</p>
-
-  <h3 style="margin-top:28px">アンプとの繋ぎ方</h3>
-  <dl class="terms">
-    <div><dt>フロントIN<small>普通の入力</small></dt><dd>ベース→マルチエフェクター→アンプのフロント INPUT に挿すシンプルな方法。手軽だが、アンプ本体のプリアンプ段もすべてのエフェクトの後を通ることになる。</dd></div>
-    <div><dt>エフェクトループ<small>SEND / RETURN</small></dt><dd>アンプにある場合、プリアンプの後・パワーアンプの前に外部エフェクトを割り込ませる端子。歪み系はアンプのINPUT側、モジュレーション系はループ側、のように使い分けると音がより自然になる。</dd></div>
-  </dl>
-  <div class="warnbox"><b>本番前に確認:</b> 電源（電池 or DC9Vアダプター、多くはセンターマイナス）の極性と容量。複数台をまとめて1つのアダプターで動かす場合、電流容量が足りているか確認する。踏み間違いを防ぐため、暗いステージでも位置がわかるよう配置を決めておくと安心。</div>
-</section>
-
 <section id="fx-first">
   <h2>最初の1台はどれがいい？</h2>
   <p class="sub">ペダルチューナーと、ZOOM B2 FOUR か Line 6 HX Stomp。電源とボードまで入れて、合計で5万円くらいの設備投資をしてほしい。</p>
@@ -1067,6 +1020,51 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <div><dt>部室で使うなら<small>our gear</small></dt><dd>ベース → チューナー → マルチ → DI（青い箱）の INPUT。マルチのアンプシミュレーターは切るか薄めに。</dd></div>
   </dl>
   <details class="more"><summary>価格について（押すと開く）</summary><p>※価格は2026年10月に通販サイト（サウンドハウス）で見た新品・税込の値段をもとにした目安です。変動するので、買う前に楽器店や通販サイトで確認してください。</p></details>
+</section>
+
+<section>
+  <h2>マルチエフェクターとは</h2>
+  <p class="sub">たくさんのエフェクトが1台に入っていて、足で切り替える機材。</p>
+  <figure class="photo"><img data-img="gt" alt="BOSS のマルチエフェクター。上に画面とつまみ、下にフットスイッチが3つ並んでいる" width="640" height="472"><figcaption>マルチエフェクターの例（BOSS GT-1000CORE）。下の3つが足で踏むスイッチ。<small class="credit">写真: Pallerti／CC BY-SA 4.0（<a href="https://commons.wikimedia.org/wiki/File:BOSS_GT-1000_CORE.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
+
+  <h3>代表的なエフェクトの種類</h3>
+  <dl class="terms">
+    <div><dt>コンプレッサー<small>compressor</small></dt><dd>音の粒を揃え、弱い音を持ち上げる。かけっぱなしにして常に薄く使うベーシストも多い。かけすぎると音の強弱がなくなる。</dd></div>
+    <div><dt>オーバードライブ<small>/ディストーション</small></dt><dd>音を歪ませる。ベースでは原音に薄く混ぜて存在感やザラつきを足す使い方が定番。かけすぎると輪郭がぼやける。</dd></div>
+    <div><dt>コーラス<small>chorus</small></dt><dd>音を揺らして重ねることで、広がりと厚みを出す。バラードやフュージョン系のフレーズで映える。</dd></div>
+    <div><dt>オクターバー<small>octaver</small></dt><dd>弾いた音の1オクターブ下や上を重ねる。シンセベースのような音や、迫力を足したいフレーズで使う。</dd></div>
+    <div><dt>プリアンプ/EQ<small>preamp</small></dt><dd>音色の土台を作る、帯域を整える機能。DI出力を内蔵している機種も多く、ライン録音やPAへの音質にも関わる。</dd></div>
+    <div><dt>チューナー<small>tuner</small></dt><dd>内蔵チューナー。踏むと自動でミュートされる機種が多く、ステージ上でも音を出さずにチューニングできる。</dd></div>
+    <div><dt>ルーパー<small>looper</small></dt><dd>弾いたフレーズを録音して重ねる機能。練習や一人での作曲、ライブでの一発芸的な使い方もされる。</dd></div>
+  </dl>
+
+  <h3 style="margin-top:28px">つなぐ順番の基本</h3>
+    <div class="svgbox">
+  <svg viewBox="0 0 780 90" width="780" height="90" role="img" aria-label="接続順の例：ベース、チューナー、コンプレッサー、歪み系、モジュレーション、アンプ">
+    <g font-family="JetBrains Mono, monospace" font-size="11" fill="currentColor">
+      <rect x="4" y="24" width="86" height="42" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="47" y="49" text-anchor="middle">BASS</text>
+      <line x1="90" y1="45" x2="120" y2="45" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="120" y="24" width="94" height="42" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="167" y="49" text-anchor="middle">TUNER</text>
+      <line x1="214" y1="45" x2="244" y2="45" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="244" y="24" width="94" height="42" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="291" y="49" text-anchor="middle">COMP</text>
+      <line x1="338" y1="45" x2="368" y2="45" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="368" y="24" width="94" height="42" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="415" y="49" text-anchor="middle">DRIVE</text>
+      <line x1="462" y1="45" x2="492" y2="45" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="492" y="24" width="120" height="42" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="552" y="49" text-anchor="middle">MOD / CHORUS</text>
+      <line x1="612" y1="45" x2="642" y2="45" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="642" y="24" width="130" height="42" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="707" y="49" text-anchor="middle">AMP</text>
+    </g>
+  </svg>
+  </div>
+  <p>基本形は <b>チューナー → コンプ → 歪み → コーラスなど → アンプ</b>。</p>
+  <p>絶対のルールではない。電源や配線の都合で入れ替えてよい。</p>
+
+  <h3 style="margin-top:28px">アンプとの繋ぎ方</h3>
+  <dl class="terms">
+    <div><dt>フロントIN<small>普通の入力</small></dt><dd>ベース→マルチエフェクター→アンプのフロント INPUT に挿すシンプルな方法。手軽だが、アンプ本体のプリアンプ段もすべてのエフェクトの後を通ることになる。</dd></div>
+    <div><dt>エフェクトループ<small>SEND / RETURN</small></dt><dd>アンプにある場合、プリアンプの後・パワーアンプの前に外部エフェクトを割り込ませる端子。歪み系はアンプのINPUT側、モジュレーション系はループ側、のように使い分けると音がより自然になる。</dd></div>
+  </dl>
+  <div class="warnbox"><b>本番前に確認:</b> 電源（電池 or DC9Vアダプター、多くはセンターマイナス）の極性と容量。複数台をまとめて1つのアダプターで動かす場合、電流容量が足りているか確認する。踏み間違いを防ぐため、暗いステージでも位置がわかるよう配置を決めておくと安心。</div>
 </section>
 </div>
 
@@ -1288,18 +1286,7 @@ code,.m{font-family:var(--mono);font-size:.92em}
     <figure class="photo"><img data-img="mixer" alt="ミキサーのフェーダーを指で動かしているところ" width="640" height="480"><figcaption><b>PA卓</b> 縦の1列が1チャンネル。上から GAIN、EQ、AUX、いちばん下がフェーダー。<small class="credit">写真: Morningfrost／Public domain（<a href="https://commons.wikimedia.org/wiki/File:AudioMixer.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
     <figure class="photo"><img data-img="wedge" alt="ステージで座ってギターを弾く人。足元に斜めに置かれた黒いスピーカーが2つある" width="640" height="384"><figcaption><b>返し（モニター）</b> 足元で自分のほうを向いている黒い箱。<small class="credit">写真: Johndan Johnson-Eilola／CC BY-SA 2.0（<a href="https://commons.wikimedia.org/wiki/File:Kelly_Joe_Phelps.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>）</small></figcaption></figure>
   </div>
-  <h3>PAボードの基礎</h3>
-  <dl class="terms">
-    <div><dt>チャンネル<small>CH</small></dt><dd>各パートの音の入り口。ベースで1つ使う。</dd></div>
-    <div><dt>GAIN<small>トリム</small></dt><dd>入ってくる信号の大きさを整える。</dd></div>
-    <div><dt>HPF<small>ハイパスフィルター</small></dt><dd>低すぎる帯域をカットするフィルター。ベース以外の楽器にかけて、無駄な低音の濁りを減らすために使われる。</dd></div>
-    <div><dt>チャンネルEQ<small>3way</small></dt><dd>各チャンネルごとの音色調整。PAさんはここでベースの出音を整える。</dd></div>
-    <div><dt>AUX SEND<small>モニター送り</small></dt><dd>返しにどれだけ送るか。「返しが小さい」はここを上げてもらうお願い。</dd></div>
-    <div><dt>フェーダー<small>MAIN</small></dt><dd>客席（外音）に送る音量。最終的な音量を決めるところ。</dd></div>
-    <div><dt>GEQ<small>グラフィックイコライザー</small></dt><dd>スピーカー全体にかける帯域別の調整。会場の癖を直す。</dd></div>
-  </dl>
-
-  <h3 style="margin-top:28px">返しは自分が納得するまで上げてもらおう</h3>
+  <h3>返しは自分が納得するまで上げてもらおう</h3>
   <p>自分の音が聞こえないまま本番に入らない。サウンドチェックで、聞こえると思えるまで何度でもお願いしていい。1回上げてもらってまだ足りなければ、もう一度言う。遠慮するところではない。</p>
   <div class="tool">
     <p style="margin:0 0 8px"><b>伝え方の例</b></p>
@@ -1310,6 +1297,17 @@ code,.m{font-family:var(--mono);font-size:.92em}
   <h3 style="margin-top:28px">外音のローがもこもこするとき</h3>
   <p>自分のアンプではなく、外音（客席側）の問題であることが多い。</p>
   <div class="warnbox"><b>PAさんに相談してみる:</b> 「外音、低音がちょっと膨らんで聞こえる気がするので、そちらのEQで少し削ってもらえますか？」と一言添えると、GEQやチャンネルEQで低域を整えてもらいやすい。自分のアンプの BASS を下げるより先に、外音側の調整を相談するほうが効果的なことが多い。</div>
+  <details class="more big" style="margin-top:28px"><summary>PA卓の用語（押すと開く）</summary>
+  <dl class="terms">
+    <div><dt>チャンネル<small>CH</small></dt><dd>各パートの音の入り口。ベースで1つ使う。</dd></div>
+    <div><dt>GAIN<small>トリム</small></dt><dd>入ってくる信号の大きさを整える。</dd></div>
+    <div><dt>HPF<small>ハイパスフィルター</small></dt><dd>低すぎる帯域をカットするフィルター。ベース以外の楽器にかけて、無駄な低音の濁りを減らすために使われる。</dd></div>
+    <div><dt>チャンネルEQ<small>3way</small></dt><dd>各チャンネルごとの音色調整。PAさんはここでベースの出音を整える。</dd></div>
+    <div><dt>AUX SEND<small>モニター送り</small></dt><dd>返しにどれだけ送るか。「返しが小さい」はここを上げてもらうお願い。</dd></div>
+    <div><dt>フェーダー<small>MAIN</small></dt><dd>客席（外音）に送る音量。最終的な音量を決めるところ。</dd></div>
+    <div><dt>GEQ<small>グラフィックイコライザー</small></dt><dd>スピーカー全体にかける帯域別の調整。会場の癖を直す。</dd></div>
+  </dl>
+  </details>
 </section>
 </div>
 
